@@ -11,12 +11,14 @@ import OrderHistory from './components/OrderHistory';
 import OrderSuccess from './components/OrderSuccess';
 import { Product, CartItem, Order } from './types';
 
+const base = import.meta.env.BASE_URL;
+
 const products: Product[] = [
-  { id: 1, name: 'Turmeric Powder (Procured from Nizamabad)', price: 120, category: 'Ground Spices', image: '/turmeric.png' },
-  { id: 2, name: 'Chilli Powder (Blended with Byadgi and Guntur)', price: 180, category: 'Ground Spices', image: '/chili.png' },
-  { id: 3, name: 'Coriander powder (Procured from Rajasthan)', price: 110, category: 'Ground Spices', image: '/coriander.png' },
-  { id: 4, name: 'Chicken Masala', price: 160, category: 'Spice Blends', image: '/chicken_masala.png' },
-  { id: 5, name: 'Garam Masala', price: 150, category: 'Spice Blends', image: '/garam_masala.png' },
+  { id: 1, name: 'Turmeric Powder (Procured from Nizamabad)', price: 120, category: 'Ground Spices', image: `${base}turmeric.png` },
+  { id: 2, name: 'Chilli Powder (Blended with Byadgi and Guntur)', price: 180, category: 'Ground Spices', image: `${base}chili.png` },
+  { id: 3, name: 'Coriander powder (Procured from Rajasthan)', price: 110, category: 'Ground Spices', image: `${base}coriander.png` },
+  { id: 4, name: 'Chicken Masala', price: 160, category: 'Spice Blends', image: `${base}chicken_masala.png` },
+  { id: 5, name: 'Garam Masala', price: 150, category: 'Spice Blends', image: `${base}garam_masala.png` },
 ];
 
 function App() {

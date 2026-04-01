@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
+  const base = import.meta.env.BASE_URL;
   return (
     <section className="hero container">
       <div className="hero-content">
@@ -9,7 +10,7 @@ const Hero: React.FC = () => {
         <a href="#shop" className="cta-button">Explore Shop</a>
       </div>
       <div className="hero-image">
-        <img src="/hero.png" alt="Sourya Masala Spices" />
+        <img src={`${base}hero.png`} alt="Sourya Masala Spices" />
       </div>
     </section>
   );

@@ -2,16 +2,17 @@ import React from 'react';
 import { Recipe } from '../types';
 
 const Recipes: React.FC = () => {
+  const base = import.meta.env.BASE_URL;
   const recipes: Recipe[] = [
     { 
       title: 'Royal Mutton Biryani', 
-      image: '/biryani.png', 
+      image: `${base}biryani.png`, 
       spices: 'Garam Masala, Turmeric, Chili Powder',
       description: 'A culinary masterpiece using our premium whole spices and ground blends.'
     },
     { 
       title: 'Creamy Butter Chicken', 
-      image: '/curry.png', 
+      image: `${base}curry.png`, 
       spices: 'Kashmiri Chili, Turmeric, Cumin Powder',
       description: 'The secret is in the blend. Our Kashmiri chili provides the perfect color without being too hot.'
     }
